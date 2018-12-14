@@ -1,44 +1,94 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CSS & SCSS
 
-## Available Scripts
+## 1. Intialized Page
 
-In the project directory, you can run:
+```
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-### `npm start`
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+}
+```
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- `box-sizing` include margin and padding.
+- Initialize font family
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## 2. Linear-gradient
 
-### `npm test`
+```
+background-image: linear-gradient(
+      to right bottom,
+      rgba(126, 213, 111, 0.8),
+      rgba(40, 180, 133, 0.8)
+    ),
+    url(../img/hero.jpg);
+```
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- cover a gradient on an image.
 
-### `npm run build`
+## 3. clip-path
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+```
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- define multiple points to clip a box.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[](www.bennettfeely.com/clippy)
 
-### `npm run eject`
+## 4. Position - absolute
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Set the parent relative
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 5. Height & Width auto
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+if set an image height, then it's width will be auto caculated.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 6. the shaking of animation
 
-## Learn More
+add `backface-visibility: hidden`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 7. If an inline element has padding
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Use inline-block, then padding will be effect.
+
+## 8. workflow behind screen - css
+
+1. author
+2. user
+3. browser
+
+4. importantce
+5. sprcificity
+6. source order
+
+persudo class should have higer specifility than original one.
+
+\*{} element have zero specifility.
+(0,0,0,0)
+
+(inline-style,id,class,element)
+
+if everything equals, then use source mode, the latest one overwrite everything before.
+
+## 9. relative unit
+
+## VSCode Plugins
+
+| name     | package name   | description                   |
+| -------- | -------------- | ----------------------------- |
+| Colorize | colorize 0.8.1 | visualize css colors in files |
+
+## CSS Fonts
+
+Use google fonts.
+
+www.fonts.google.com
