@@ -79,7 +79,29 @@ persudo class should have higer specifility than original one.
 
 if everything equals, then use source mode, the latest one overwrite everything before.
 
+## box
+
+block-level: occupy as much as possible, which is usually 100%.
+
+Inline boxes
+
+occupy content's space
+no line break
+bo heights and width
+padding and margins only horizental
+
+Inline-block
+set padding margin
+
 ## 9. relative unit
+
+## 10. BEM class name system
+
+stands for `block elements modifier`
+
+`btn`
+`btn__emotion`
+`btn__emotion--modified`
 
 ## VSCode Plugins
 

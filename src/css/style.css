@@ -47,18 +47,18 @@ body {
 
 /* Heading */
 /* Logo */
-.logo-box {
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
 
-.logo {
+.header__logo {
   height: 3.5rem;
 }
 
 /* Title box */
-.text-box {
+.header__text-box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -75,7 +75,7 @@ body {
   margin-bottom: 6rem;
 }
 
-.heading-primary-main {
+.heading-primary--main {
   display: block;
   font-size: 6rem;
   letter-spacing: 3.5rem;
@@ -83,7 +83,7 @@ body {
   animation: moveInLeft 1.5s;
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
   font-size: 2rem;
   letter-spacing: 1.75rem;
@@ -115,12 +115,12 @@ body {
   box-shadow: 0 0.5rem 0.1rem rgba(0, 0, 0, 0.2);
 }
 
-.btn-white {
+.btn--white {
   background-color: #fff;
   color: #777;
 }
 
-.btn-animated {
+.btn--animated {
   animation: moveInBottom-delay 1.5s 0.75s;
   animation-fill-mode: backwards;
 }
@@ -139,7 +139,7 @@ body {
   transition: all 0.4s;
 }
 
-.btn-white::after {
+.btn--white::after {
   background-color: white;
 }
 
