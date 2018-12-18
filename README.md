@@ -116,3 +116,7 @@ Use google fonts.
 www.fonts.google.com
 
 ## Install SCSS
+
+https://medium.com/@oreofeolurin/configuring-scss-with-react-create-react-app-1f563f862724
+
+Test: no reject sass can still work
