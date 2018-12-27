@@ -11,9 +11,15 @@
 
 // Components
 @import "components/button";
+@import "components/composition";
+@import "components/feature-box";
+@import "components/card";
+@import "components/popup";
 
 // Layouts
 @import "layout/header";
+@import "layout/grid";
+@import "layout/navigation";
 
 // Pages
 @import "pages/home";
